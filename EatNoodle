@@ -1,13 +1,14 @@
+//定义noodle类
 class Noodle
 {
 	String length;
 	String kind;
-	Noodle(String length,String kind)
+	Noodle(String length,String kind)//构造器初始化
 	{
 		this.length = length;
 		this.kind = kind;
 	}
-	public static int Eat(int bowl)
+	public static int Eat(int bowl)//用static修饰的方法
 	{
 		if(bowl > 3)
 		{
@@ -21,8 +22,8 @@ class  EatNoodle
 {
 	public static void main(String[] args) 
 	{
-		Noodle noodle = new Noodle("3m","shanxi");
-		Noodle.Eat(1);
+		Noodle noodle = new Noodle("3m","shanxi");//创建对象
+		Noodle.Eat(1);//static修饰的方法只能用类来调用
 
 	}
 }
