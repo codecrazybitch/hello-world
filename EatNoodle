@@ -1,0 +1,28 @@
+class Noodle
+{
+	String length;
+	String kind;
+	Noodle(String length,String kind)
+	{
+		this.length = length;
+		this.kind = kind;
+	}
+	public static int Eat(int bowl)
+	{
+		if(bowl > 3)
+		{
+			System.out.println("Are your a pig?");
+		}else
+			System.out.println("This is deliciouc!");
+		return 1;
+	}
+}
+class  EatNoodle
+{
+	public static void main(String[] args) 
+	{
+		Noodle noodle = new Noodle("3m","shanxi");
+		Noodle.Eat(1);
+
+	}
+}
