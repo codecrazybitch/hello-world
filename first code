@@ -1,0 +1,47 @@
+class  CirculateDemo
+{
+	//用方法定义换行操作
+	public static void ChangeLine(int line)
+	{
+		if(line % 10 == 0 && line != 0)
+		{
+			System.out.println();
+		}	
+	}
+	public static void main(String[] args) 
+	{
+		//打印0-99，每十个数换一行
+		/*
+		分析：
+		1.用循环先打印出0-99这100个数
+		2.再进行换行操作
+		*/
+//一开始的思路，先循环出数，再换行，两个步骤分开写
+		//打印0-99
+		for(int i = 1; i<= 100;i++)
+		{
+			System.out.print(i + " ");
+			ChangeLine(i);
+		}System.out.println();
+		System.out.println(".......................");
+	
+//外层循环来写
+/*
+分析：
+1.打印0-99
+2.分为10行，用循还来实现
+*/
+//版本二
+		for(int num = 1;num <= 100;num++)
+		{
+			System.out.print(num + " ");
+			if(num % 10 == 0)
+			{
+				System.out.println();
+			}
+		}
+		System.out.println(".......................");
+		int[] nums = new int[156];
+		System.out.println(nums[55]);
+    }
+}
