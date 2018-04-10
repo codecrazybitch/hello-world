@@ -10,6 +10,8 @@ public class MainDemo {
         shotnoodle.JugdeLength();
         longnoodle.JugdeLength();
         Person person = new Person();
+        System.out.println("餐厅1最多课容纳：" + Person.NumberOfPerson1);
+        System.out.println("餐厅二最多可容纳："+Person.NumberOfPerson2);
         System.out.println("吃饭中........");
         person.Eat();
     }
