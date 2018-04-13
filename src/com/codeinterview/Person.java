@@ -15,7 +15,7 @@ public class Person {
        }
     }
 
-    public void eatFood(Food food) {
-        System.out.printf("My name is %s and I am eating %s.", this.name, food.getName());
+    public void eat(Food food) {
+        System.out.printf("My name is %s and I am eating %s.\nMore detail about the food: %s.", this.name, food.getName(), food.toString());
     }
 }

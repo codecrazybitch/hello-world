@@ -3,10 +3,16 @@ package com.codeinterview;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        Person customer = new Person("JiaZheng");
+        try {
+            Restaurant restaurant = new Restaurant();
 
-        Noodle noodle = new Noodle(3.5, NoodleType.Wide);
+            Person customer = new Person("JiaZheng");
 
-        customer.eatFood(noodle);
+            Food food = restaurant.buy();
+
+            customer.eat(food);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

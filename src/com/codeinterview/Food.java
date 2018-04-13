@@ -13,12 +13,15 @@ public class Food {
     }
 
     public void setPrice(double price) throws Exception {
-        if (price <=  0.0) {
+        if (price <= 0.0) {
             throw new Exception("The price must be bigger than 0.");
-        }
-        else {
+        } else {
             this.price = price;
         }
+    }
+
+    public Food(String name) {
+        this.name = name;
     }
 
     public Food(String name, double price) throws Exception {
