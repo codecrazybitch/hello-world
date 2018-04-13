@@ -1,0 +1,39 @@
+//定义noodle类
+class Noodle
+{
+	String length;
+	String kind;
+	Noodle(){//构造器重载
+	System.out.println("Do you take dinner?");
+	}
+	Noodle(String length,String kind)//构造器初始化
+	{
+		this.length = length;
+		this.kind = kind;
+	}
+	void Eat()//方法重载
+	{
+		for(int i = 0; i < 5;i++)
+		{
+			System.out.println("one by one");
+		}
+	}
+	public static int Eat(int bowl)//用static修饰的方法
+	{
+		if(bowl > 3)
+		{
+			System.out.println("Are your a pig?");
+		}else
+			System.out.println("This is deliciouc!");
+		return 1;
+	}
+}
+class  EatNoodle
+{
+	public static void main(String[] args) 
+	{
+		Noodle noodle = new Noodle("3m","shanxi");//创建对象
+		Noodle.Eat(1);//static修饰的方法只能用类来调用
+
+	}
+}
