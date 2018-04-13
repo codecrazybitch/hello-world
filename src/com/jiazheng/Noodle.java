@@ -1,3 +1,5 @@
+package com.jiazheng;
+
 public class Noodle {
     private String type;
     private int numbers;

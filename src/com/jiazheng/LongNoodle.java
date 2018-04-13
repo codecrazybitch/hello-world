@@ -1,3 +1,5 @@
+package com.jiazheng;
+
 public class LongNoodle extends Noodle{
     private int length;
     LongNoodle(String type,int numbers,int length){

@@ -1,3 +1,5 @@
+package com.jiazheng;
+
 public class MainDemo {
     public static void main(String[] args) {
         Noodle noodle = new Noodle("长面", 2);
