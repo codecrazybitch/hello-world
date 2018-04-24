@@ -23,3 +23,4 @@ class ChongQingXiaoNoodle extends MakingNoodle{
         System.out.println("做调味料");
     }
 }
+
