@@ -13,6 +13,8 @@ public class Restaurant {
         foodTypes = new ArrayList<>();
         foodTypes.add("Noodle");
         foodTypes.add("Fish");
+        foodTypes.add("刀削面");
+        foodTypes.add("重庆小面");
     }
 
     public void printMenu() {
