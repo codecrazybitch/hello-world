@@ -31,7 +31,7 @@ public class Food {
     }
 
     @Override
-    public String toString() {
+        public String toString() {
         return String.format("Food name: %s and the price is %f", this.name, this.price);
     }
 }
